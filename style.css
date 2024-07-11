@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* Global styles */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+#results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#results-table th {
+  background-color: #f0f0f0;
+}
+
+#results-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#results-table tr:hover {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: 
+    linear-gradient(to bottom right, 
+      rgb(255, 127, 0), 
+      rgb(0, 255, 0), 
+      rgb(0, 206, 209), 
+      rgb(0, 0, 255), 
+      rgb(128, 0, 128)
+    );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.table-wrapper {
+  background-attachment: fixed; /* add this property */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+title img {
+  height: 20px; /* adjust the height to your liking */
+  vertical-align: middle;
+  margin-right: 10px; /* add some space between the logo and the title text */
+}
